@@ -20,6 +20,13 @@ class SerialGenerator:
     100
     """
     
-    def __init__(self, start =0):
-    "create new generator, initialized at start = 0"
+    def __init__(self, start =100):
+        "create new generator, initialized at start"
+        self.start = self.next = start
+    
+    def __repr__(self):
+        "show representation to more easily read terminal output"
+        return f"SerialGenerator start = {self.start}, next = {self.next}"
+
+
     
