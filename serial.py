@@ -35,10 +35,10 @@ class SerialGenerator:
     
     def reset(self):
         """reset start value back to start"""
-        self.start = start
+        self.next = self.start
       
-
-        
+serial = SerialGenerator(9002)
+print(serial.generate_next())        
 
 
     
